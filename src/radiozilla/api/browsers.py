@@ -10,10 +10,8 @@ from socket import (
 )
 from typing import Union
 
-from radiozilla.datatypes import URL
-from radiozilla.decorators.memoizations import memoize
-from .exceptions.network import NetworkFailure
-from .exceptions.lookup import LookupException
+from ..datatypes import URL
+from ..decorators.memoizations import memoize
 
 
 class Browser:
@@ -56,7 +54,7 @@ class Browser:
                                port=80, family=0, type=0,
                                proto=IPPROTO_TCP)
         except gaierror:
-            raise NetworkFailure
+            ...
         else:
             if (data and (isinstance(data[0][4], tuple))):
                 return [ip[4][0] for ip in data]
@@ -68,7 +66,7 @@ class Browser:
         try:
             hostname, *_ = gethostbyaddr(ip)
         except herror:
-            raise LookupException
+            ...
 
         return hostname
 
@@ -81,7 +79,7 @@ class Browser:
         for ip in self.servers:
             try:
                 host = self.lookup(ip)
-            except LookupException:
+            except Exception:
                 ...
             else:
                 names.append(host)

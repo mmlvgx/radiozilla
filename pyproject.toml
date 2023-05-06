@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "radiozilla"
-version = "0.1.0"
+version = "1.0.0"
 description = "Python Radio Browser API wrapper with fully Type Hinting and Documentation"
 authors = ["mmlvgx <mmlvgx@gmail.com>"]
 license = "MIT"

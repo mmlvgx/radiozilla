@@ -7,18 +7,16 @@ from aiohttp import ClientSession
 from msgspec.json import decode
 
 from . import __version__
-from .decorators import memoize
-from .api import Browser
+from .decorators.memoizations import memoize
+from .api.browsers import Browser
 from .datatypes import T, Order, Boolean, NOT_SET
-from .structs import (
-    Codec,
-    Country,
-    CountryCode,
-    Language,
-    State,
-    Tag,
-    Station,
-)
+from .structs.codecs import Codec
+from .structs.countries import Country
+from .structs.countrycodes import CountryCode
+from .structs.languages import Language
+from .structs.states import State
+from .structs.stations import Station
+from .structs.tags import Tag
 from .defaults import (
     _default_order,
     _default_reverse,
@@ -80,8 +78,10 @@ class Radio(Browser):
         ----------------------------------------
         ``type`` : |T|, required
             Serialization of the response with type
+
         ``endpoint`` : |str|, required
             Endpoint to request of RadioBrowser API
+
         ``params`` : |dict |str, Any||, optional
             Parameters of request
         """
