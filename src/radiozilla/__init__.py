@@ -1,3 +1,3 @@
-"""📻 Python Radio Browser API wrapper with fully Type Hinting and Documentation"""
+"""Python Radio Browser API wrapper with fully Type Hinting and Documentation"""
 
-pass
+__version__ = "0.1.0"
