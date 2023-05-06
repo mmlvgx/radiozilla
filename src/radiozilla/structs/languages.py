@@ -22,3 +22,4 @@ class Language(Struct):
     name: Optional[str] = None
     iso_639: Optional[str] = None
     stationcount: Optional[int] = None
+

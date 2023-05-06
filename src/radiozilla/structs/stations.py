@@ -169,3 +169,4 @@ class Station(Struct):
     geo_lat: Optional[Union[int, float]] = None
     geo_long: Optional[Union[int, float]] = None
     has_extended_info: Optional[bool] = None
+

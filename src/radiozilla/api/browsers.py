@@ -93,3 +93,4 @@ class Browser:
         host = choice(sorted(self.hosts))
 
         return f"https://{host}"
+

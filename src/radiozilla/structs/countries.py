@@ -22,3 +22,4 @@ class Country(Struct):
     name: Optional[str] = None
     iso_3166_1: Optional[str] = None
     stationcount: Optional[int] = None
+

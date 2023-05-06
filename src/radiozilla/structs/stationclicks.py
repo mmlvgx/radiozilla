@@ -28,3 +28,4 @@ class StationClick(Struct):
     clickuuid: Optional[Union[str, UUID]] = None
     clicktimestamp_iso8601: Optional[Union[str, UUID]] = None
     clicktimestamp: Optional[Union[str, UUID]] = None
+

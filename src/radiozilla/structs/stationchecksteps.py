@@ -48,3 +48,4 @@ class StationCheckStep(Struct):
     urltype: Optional[str] = None
     error: Optional[str] = None
     creation_iso8601: Optional[str] = None
+

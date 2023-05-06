@@ -18,3 +18,4 @@ class Codec(Struct):
     """
     name: Optional[str] = None
     stationcount: Optional[int] = None
+

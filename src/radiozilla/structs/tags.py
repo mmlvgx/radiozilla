@@ -18,3 +18,4 @@ class Tag(Struct):
     """
     name: Optional[str] = None
     stationcount: Optional[int] = None
+

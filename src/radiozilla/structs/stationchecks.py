@@ -127,3 +127,4 @@ class StationCheck(Struct):
     ssl_error: Optional[int] = None
     geo_lat: Optional[int] = None
     geo_long: Optional[int] = None
+

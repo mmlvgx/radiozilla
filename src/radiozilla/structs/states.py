@@ -22,3 +22,4 @@ class State(Struct):
     name: Optional[str] = None
     country: Optional[str] = None
     stationcount: Optional[int] = None
+

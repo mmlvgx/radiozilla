@@ -16,3 +16,4 @@ def memoize(callback: Callable) -> Callable:
         return cache[item]
 
     return wrapper
+

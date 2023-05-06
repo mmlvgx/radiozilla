@@ -38,3 +38,4 @@ class Boolean:
     BOTH = "both"
     TRUE = "true"
     FALSE = "false"
+
